@@ -6,6 +6,7 @@
 
 ---
 ## 1_개발 환경
-- Java8
+- Java11
 - intellij
 - springboot
+- 
