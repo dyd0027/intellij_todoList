@@ -24,9 +24,9 @@ public class TodoService {
         return this.todoRepository.save(todoEntity);
     }
     public TodoEntity searchById(Long id){
-        this.todoRepository.findById(id)
+        return this.todoRepository.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-        return null;
+
     }
     public List<TodoEntity> searchAll(){
         return this.todoRepository.findAll();
